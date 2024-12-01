@@ -1,0 +1,39 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+
+.header{
+    background-color: $primary-color;
+    width: 100%;
+    height: 6rem;
+
+    @include flex-center (row);
+    justify-content: space-between;
+
+    &-anchor{
+        padding: 1rem;
+    }
+    &-anchor__logo{
+        padding: 1rem;
+    }
+    // &__nav{
+    //     width: 45%;
+        
+    // }
+    // &__list{
+
+    //     @include tablet{
+    //         @include flex-center(row);
+    //         justify-content: space-between;
+    //     }
+        
+    // }
+    // &__item{
+    //     list-style: none;
+    // }
+    // &__link{
+    //     color: #fff;
+    //     text-decoration: none;
+    // }
+}

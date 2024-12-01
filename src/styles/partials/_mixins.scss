@@ -1,0 +1,14 @@
+@use '../partials/variables' as *;
+@use '../partials/typography.scss' as *;
+
+@mixin tablet {
+    @media screen and (min-width: 700px){
+        @content;
+    }
+}
+
+@mixin flex-center ($direction){
+      display: flex;
+      align-items: center;
+      flex-direction: $direction;
+}
