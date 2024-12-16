@@ -1,0 +1,60 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/typography.scss' as *;
+
+
+.question-form__box{
+    background-color: $primary-color;
+    @include tablet{
+        @include body-padding-tab;
+    }
+}
+.question-form{
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    &__label{
+        @include body-font-mob;
+        padding-bottom: 1rem;
+        color: $white-color;
+
+       @include tablet{
+            @include body-font-tab;
+        }
+    }
+
+    &__txt{
+        width: 100%;
+        padding: 2rem;
+        resize: none;
+        border-radius: 5px;
+        border: 1px solid $primary-color;
+        margin-bottom: 1rem;
+        outline:  $button-color;
+        @include body-font-mob;
+
+        @include tablet{
+            height: 9.375rem;
+            @include body-font-tab;
+        }
+    }
+    &__input{
+        width: 100%;
+        height: 50px;
+        padding: 0.65rem;
+        border-radius: 5px;
+        border: 1px solid $primary-color;
+        margin-bottom: 1rem;
+        outline: $button-color;
+
+        @include body-font-mob;
+
+        @include tablet{
+            @include body-font-tab;
+        }
+    }
+   
+}

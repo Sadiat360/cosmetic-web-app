@@ -1,0 +1,45 @@
+@use './styles/partials/global' as *;
+@use './styles/partials/variables' as *;
+@use './styles/partials/mixins' as *;
+@use './styles/partials/typography.scss' as *;
+
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+// .container{
+//     padding: 1.5rem;
+//     cursor: pointer;
+// }
+// .flex{
+//     display: flex;
+//     align-items: center;
+// }
+// .grid{
+//     display: grid;
+//     align-items: center;
+// }
+// .btn{
+//     padding: .6rem 1.5rem;
+//     background-color: $button-color;
+//     border-radius: 3rem;
+//     border: none;
+//     outline: none;
+//     cursor: pointer;
+// }
+// .btn a{
+//     color: $black-color;
+//     font-weight: 500;
+    
+// }
+// .btn:hover{
+//  background: #fff;
+// }
+// img{
+//     width: 100%;
+//     height: auto;
+// }
