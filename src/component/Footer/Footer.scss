@@ -1,0 +1,59 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/typography.scss' as *;
+
+
+.footer{
+    width: 100%;
+    background-color: $accent-color;
+    padding: 1rem;
+
+    &-container{
+        width: 100%;
+        border-bottom: 1px solid $black-color;
+        padding-bottom: 1rem;
+        @include tablet{
+            @include flex-center(row);
+        }
+
+
+    }
+    &-list{
+        width: 100%;
+        @include flex-center(row);
+
+        @include tablet{
+            justify-content: space-between;
+        }
+       
+        &__item{
+            background: $white-color;
+            padding: 0.5rem;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            margin-right: 1rem;
+        
+        }
+        @include tablet{
+            @include flex-center(column);
+        }
+
+        &__text{
+            padding-top: 0.5rem;
+            @include body-font-mob;
+
+            @include tablet{
+                @include body-font-tab;
+            }
+        }
+    }
+
+    &__about-box{
+        width: 100%;
+        @include flex-center(row);
+        justify-content: space-between;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+}

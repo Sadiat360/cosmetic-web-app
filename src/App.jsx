@@ -1,23 +1,29 @@
-import './App.scss'
-import Header from './components/Header/Header';
-// import Navbar from './components/Navbar/Navbar';
+import './App.scss';
+import Footer from './component/Footer/Footer';
+import HomePage from './Pages/HomePage/HomePage';
 import { BrowserRouter, Routes, Route, } from 'react-router-dom';
+
 
 function App() {
  
 
   return (
     <>
+
     <BrowserRouter>
-    <Header />
-    <Routes>
     
-      <Route path='/' />
+    <Routes>
+
+    <Route path='/' element={<HomePage />} />
+      
    
     </Routes>
+    <Footer />
     
     </BrowserRouter>
+
    
+  
 
 
      

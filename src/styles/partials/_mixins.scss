@@ -6,9 +6,68 @@
         @content;
     }
 }
+@mixin desktop {
+    @media screen and (min-width: 1280px){
+        @content;
+    }
+}
 
 @mixin flex-center ($direction){
       display: flex;
       align-items: center;
       flex-direction: $direction;
+}
+@mixin reset-list{
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    
+  }
+@mixin padding-tab{
+    padding-top: 3rem ;
+    padding-bottom: 2.25rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+@mixin body-font-mob {
+    font-size: 0.75rem;
+    line-height: 15px;
+    font-weight: 500; 
+    font-family: 'Poppins';
+  }
+@mixin body-font-tab {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+
+}
+
+@mixin title-font-mob {
+    font-size: 1.625rem;
+    line-height: 38px;
+    font-weight: 300; 
+    font-family: 'Poppins';
+}
+  
+@mixin title-font-tab {
+   font-size: 3.25rem;
+   line-height: 66px;
+}
+@mixin heading-font-mob {
+   font-size: 1.125rem;
+   line-height: 23px;
+   font-weight: 500;
+}
+@mixin heading-font-tab {
+   font-size: 1.5rem;
+   line-height: 1.875rem;
+   font-weight: 500;
+}
+
+@mixin body-padding-mob{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+@mixin body-padding-tab{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
