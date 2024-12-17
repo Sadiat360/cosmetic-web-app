@@ -6,6 +6,7 @@ import Discount from '../../component/Discount/Discount';
 import Question from '../../component/Question/Question';
 import QuestionForm from '../../component/QuestionForm/QuestionForm';
 import { useState } from 'react';
+import SkinCareList from '../../component/SkinCareLists/SkinCareLists';
 
 function HomePage(){
 
@@ -28,6 +29,8 @@ function HomePage(){
             <Discount />
             <Question  handleFormClick = {handleFormClick}/>
            { openForm === true ? (<QuestionForm />) : null} 
+
+           <SkinCareList />
         </main>
 
         </>

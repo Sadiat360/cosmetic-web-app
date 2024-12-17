@@ -1,0 +1,19 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/typography.scss' as *;
+
+.skincare{
+    width:  100%;
+    background-color: $primary-color;
+    
+    &-title{
+        color: $white-color;
+        @include title-font-mob;
+
+        @include tablet{
+            @include title-font-tab;
+        }
+    }
+
+}
